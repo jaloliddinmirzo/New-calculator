@@ -1,0 +1,11 @@
+export const button = document.querySelectorAll(".button")
+export const label = document.querySelector(".label")
+export const amal = document.querySelectorAll(".amal")
+export const opertor = document.querySelectorAll(".opertor")
+export const del = document.querySelector(".del")
+export const reset = document.querySelector(".button")
+export const equel = document.querySelector(".button")
+export const display = document.querySelector(".display")
+export const form = document.querySelector(".form")
+export const nuqta = document.querySelector(".nuqta")
+

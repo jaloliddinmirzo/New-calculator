@@ -205,6 +205,18 @@ input::placeholder {
     box-shadow: inset 0px -2px 0px var(--number-box-color);
     transform: translateY(3px);
 }
+.nuqta {
+    color: var(--number-color);
+    background: var(--btn-bcg);
+    box-shadow: inset 0px -4px 0px var(--number-box-color);
+    border-radius: 10px;
+    padding: 13px;
+}
+.nuqta:active{
+    background: var(--btn-active-bcg);
+    box-shadow: inset 0px -2px 0px var(--number-box-color);
+    transform: translateY(3px);
+}
 
 .opertor {
     color: var(--white-color);
@@ -217,7 +229,18 @@ input::placeholder {
     padding: 13px ;
     grid-column: 1/3;
 }
-
+.amal{
+    color: var(--number-color);
+    background: var(--btn-bcg);
+    box-shadow: inset 0px -4px 0px var(--number-box-color);
+    border-radius: 10px;
+    padding: 13px;
+}
+.amal:active{
+    background: var(--btn-active-bcg);
+    box-shadow: inset 0px -2px 0px var(--number-box-color);
+    transform: translateY(3px);
+}
 .reset:active{
     background: var(--del-active-bcg);
     box-shadow: inset 0px -2px 0px var(--del-color);
@@ -244,6 +267,7 @@ input::placeholder {
     box-shadow: inset 0px -2px 0px var(--equel-color);
     transform: translateY(3px);
 }
+
 /* main end */
 
 
