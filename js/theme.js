@@ -11,6 +11,5 @@ export function darkFunc() {
         modeIndex = modeIndex > 2 ? 0 : modeIndex;
         document.body.classList.add(`${list[modeIndex]}`)
         oval.classList.add(`${trans[modeIndex]}`)
-        console.log(trans[modeIndex]);
     })
 }

@@ -326,6 +326,19 @@ input::placeholder {
     box-shadow: inset 0px -2px 0px var(--number-box-color);
     transform: translateY(3px);
 }
+#nuqta {
+    color: var(--number-color);
+    background: var(--btn-bcg);
+    box-shadow: inset 0px -4px 0px var(--number-box-color);
+    border-radius: 10px;
+    padding: 13px;
+}
+
+#nuqta:active {
+    background: var(--btn-active-bcg);
+    box-shadow: inset 0px -2px 0px var(--number-box-color);
+    transform: translateY(3px);
+}
 
 
 .del {

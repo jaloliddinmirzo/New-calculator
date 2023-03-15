@@ -3,10 +3,7 @@ import {
     amal,
     opertor,
     equel,
-    reset,
-    oval,
-    mode,
-    body
+    nuqta,
 } from "./ui.js";
 
 
@@ -22,23 +19,24 @@ export function buttonFunc() {
     })
 }
 
-
+let  box = false;
+let  amalText = "";
 export function amalFunc() {
     amal.forEach((item) => {
         item.addEventListener("click", () => {
 
-            if (item.textContent == "+" || item.textContent == "-" || item.textContent == "/" || item.textContent == "x" || item.textContent == ".") {
+            if (item.textContent == "+" || item.textContent == "-" || item.textContent == "/" || item.textContent == "x" ) {
+                amalText =  item.textContent;
                 let end = label.value[label.value.length - 1];
-                if (end == "-" || end == "+" || end == "/" || end == "x" || end == ".") {
+                if (end == "-" || end == "+" || end == "/" || end == "x" ) {
                     label.value = label.value.slice(0, label.value.length-1) + item.textContent;
+                    box = true
+
                     return;
                 }
             }
-                            if (end  == ".") {
-                    label.value += "." 
-                    return;
-                }
-            label.value += item.textContent;
+
+                label.value += item.textContent;
         })
     });
 
@@ -73,9 +71,18 @@ export function keyFunc() {
     document.addEventListener("keydown", (e) => {
         if (e.key == "Enter") {
             equel.click()
-        } else if (e.keyCode !== 13) {
+        } 
+
+    })
+}
+
+
+export function nuqtaFunc() {
+    nuqta.addEventListener("click", () => {
+        if (!label.value.includes('.') ) {
+            label.value += nuqta.textContent;
             return;
-        }
+        } 
 
     })
 }
